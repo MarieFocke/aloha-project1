@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Light.eot');
+    src: url('fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Raleway-Light.woff') format('woff'),
+        url('fonts/Raleway-Light.ttf') format('truetype'),
+        url('fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Bold.eot');
+    src: url('fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Raleway-Bold.woff') format('woff'),
+        url('fonts/Raleway-Bold.ttf') format('truetype'),
+        url('fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Medium.eot');
+    src: url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Raleway-Medium.woff') format('woff'),
+        url('fonts/Raleway-Medium.ttf') format('truetype'),
+        url('fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Italic.eot');
+    src: url('fonts/Raleway-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Raleway-Italic.woff') format('woff'),
+        url('fonts/Raleway-Italic.ttf') format('truetype'),
+        url('fonts/Raleway-Italic.svg#Raleway-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-Regular.eot');
+    src: url('fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlayfairDisplay-Regular.woff') format('woff'),
+        url('fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+        url('fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-Italic.eot');
+    src: url('fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlayfairDisplay-Italic.woff') format('woff'),
+        url('fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+        url('fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-Bold.eot');
+    src: url('fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlayfairDisplay-Bold.woff') format('woff'),
+        url('fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+        url('fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@-ms-viewport{
+    width: device-width;
+  }
+
+body { 
+    font-family: 'Raleway';
+    font-style: light;
+    color: #2d2d2d
+}
+h2,
+h3 {
+    font-family: 'Playfair Display';
+}
+
+.logo img {
+    height: 50px;
+}
+.cart img {
+    height: 50px;
+}
+.main-navigation a {
+    color: #e2574c;
+    text-decoration: none;
+    padding: 20px 10px 20px;
+    height: 1px;
+}
+.main-navigation li {
+    list-style: none;
+    text-align: center;
+    display: inline;
+    text-transform: uppercase;
+    padding: 20px;
+
+}
+.banner {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    background: url(images/banner-girl.png) no-repeat center, url(images/flower-bkgd.jpg) repeat-x;
+    background-size: contain;
+    height: 500px;
+}
+.banner-textcontainer {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+
+.collection {
+     text-align: center;
+     margin: 15px 15px;
+     font-size: 35px;
+}
+.season {
+    text-align: center;
+     margin: 15px 15px;
+     font-size: 60px;
+}
+.products a{
+    color: black;
+    text-decoration-line: none;
+    padding: 20px 10px 20px;
+    height: 10px;
+    display: inline;
+}
+.products li{
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+    text-align: center;
+}
+h3 {
+    color: #e2574c;
+}
+.logo{
+    position: relative;
+    top: 10px
+
+}
+.relative {
+    position:relative;
+    top: 0px
+    left: 100px
+}
+.contact-media li a{
+    color: grey;
+    text-decoration: none;
+    padding: 10px 10px 10px;
+    height: 1px;
+}
+.contact-media li{
+    list-style: none;
+    text-transform: uppercase;
+    text-align: right;
+}
+.adresse {
+    color: grey;
+    flex: 1 0 20px;
+    font-family: 'Playfair Display';
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    flex-flow: row wrap;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.news-letter h2 p form {
+    text-align: center;
+    flex-direction: column
+
+
+}
+.updates {
+    min-height: 244px;
+    color: white;
+    text-align: center;
+    background: url(images/wave-bkgd.jpg) no-repeat;
+    background-position: bottom;
+    margin-bottom:11px;
+    padding-top: 54px;
+}
+.updates h2{
+    font-size: 35px;
+    margin-bottom: 12px
+}
+.updates p {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 15px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 720px) {
+    .container{
+        display: flex;
+    }
+    .logo:nth-child(:first) {
+        order: 1;
+        justify-content: space-between;
+
+
+    }
+    .cart:nth-child(2) {
+       order: 2;
+        justify-content: space-between;
+       
+    }
+
+    .main-navigation:nth-child(3) {
+       order: 3;
+        justify-content: space-between;
+
+
+}
+}
+@media screen and (min-width: 480px) {
+}
+
+
