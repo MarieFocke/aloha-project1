@@ -181,7 +181,7 @@ h3 {
     align-items: center;
     display: flex;
     height: 30px;
-    justify-content: center;
+    justify-content: space-between;
     flex-flow: row wrap;
     max-width: 1240px;
     margin: 0 auto;
@@ -231,29 +231,44 @@ h3 {
 
 
 @media screen and (min-width: 720px) {
-    .container{
-        display: flex;
-    }
-    .logo:nth-child(:first) {
+
+    .logo {
         order: 1;
-        justify-content: space-between;
-
-
+        flex-basis: 100px;
+        
     }
-    .cart:nth-child(2) {
+    .cart {
        order: 2;
-        justify-content: space-between;
+       flex-basis: 100px;
+        
        
     }
 
-    .main-navigation:nth-child(3) {
+    .main-navigation {
        order: 3;
-        justify-content: space-between;
+       flex-basis: 100px;
+        
 
 
 }
 }
 @media screen and (min-width: 480px) {
+    .logo {
+        order: 1;
+        flex-basis: 100px;
+        
+    }
+    .cart {
+       order: 2;
+       flex-basis: 100px;
+        
+       
+    }
+
+    .main-navigation {
+       order: 3;
+       flex-basis: 100px;
+        
 }
 
 
