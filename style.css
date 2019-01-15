@@ -87,12 +87,24 @@ h2,
 h3 {
     font-family: 'Playfair Display';
 }
-
+.header {
+    font-family: 'Playfair Display';
+}
 .logo img {
     height: 50px;
 }
+.logo{
+    position: relative;
+    top: 10px;
+    flex: 0 0 20%;
+}
 .cart img {
     height: 50px;
+}
+.cart {
+    margin: auto;
+    flex: 0 0 20%;
+
 }
 .main-navigation a {
     color: #e2574c;
@@ -123,80 +135,66 @@ h3 {
     margin-bottom: 50px;
 
 }
-
 .collection {
-     text-align: center;
-     margin: 15px 15px;
-     font-size: 35px;
+    text-align: center;
+    margin: 15px 15px;
+    font-size: 35px;
 }
 .season {
-    text-align: center;
-     margin: 15px 15px;
-     font-size: 60px;
+   text-align: center;
+    margin: 15px 15px;
+    font-size: 60px;
 }
-.products a{
+.container {
+    text-align: center;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px
+}
+.classification{
+    text-align: center;
+    background: url(images/mens-category.jpg) no-repeat, url(images/trends-category.jpg) no-repeat, url(images/glasses-category.jpg) no-repeat, url(images/sale-category.jpg) no-repeat, url(images/bags-category.jpg) no-repeat, url(images/womens-category.jpg) no-repeat;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.classification a{
     color: black;
-    text-decoration-line: none;
-    padding: 20px 10px 20px;
-    height: 10px;
-    display: inline;
+    text-decoration: none;
+    
 }
-.products li{
-    list-style: none;
-    display: inline;
+.classification li{
     text-transform: uppercase;
-    text-align: center;
+    display: inline;
+    
 }
+.products {
+    color: #969696;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 30px 20px 10px;
+    height: 450px;
+    width: 350px;
+}
+.products h2{
+    color: #2d2d2d;
+    padding: 10px 10px;
+}
+
 h3 {
     color: #e2574c;
 }
-.logo{
-    position: relative;
-    top: 10px
 
-}
 .relative {
     position:relative;
     top: 0px
     left: 100px
 }
-.contact-media li a{
-    color: grey;
-    text-decoration: none;
-    padding: 10px 10px 10px;
-    height: 1px;
-}
-.contact-media li{
-    list-style: none;
-    text-transform: uppercase;
-    text-align: right;
-}
-.adresse {
-    color: grey;
-    flex: 1 0 20px;
-    font-family: 'Playfair Display';
-}
-
-.container {
-    align-items: center;
-    display: flex;
-    height: 30px;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 10px;
-}
-.news-letter h2 p form {
-    text-align: center;
-    flex-direction: column
-
-
-}
 .updates {
     min-height: 244px;
     color: white;
-    text-align: center;
     background: url(images/wave-bkgd.jpg) no-repeat;
     background-position: bottom;
     margin-bottom:11px;
@@ -210,6 +208,29 @@ h3 {
     font-size: 16px;
     line-height: 25px;
     margin: 15px 0;
+}
+footer {
+    background: #242424;
+    text-align: center;
+}
+.adresse {
+    color: grey;
+    flex: 1 0 20px;
+    font-family: 'Playfair Display';
+}
+.contact-media li a{
+    color: grey;
+    text-decoration: none;
+    padding: 10px 10px 10px;
+    height: 1px;
+}
+.contact-media li{
+    list-style: none;
+    text-transform: uppercase;
+}
+.news-letter h2 p form {
+    
+    flex-direction: column
 }
 
 
