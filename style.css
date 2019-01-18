@@ -5,336 +5,482 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /*Font Faces*/
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('fonts/Raleway-Light.eot');
-    src: url('fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Raleway-Light.woff') format('woff'),
-        url('fonts/Raleway-Light.ttf') format('truetype'),
-        url('fonts/Raleway-Light.svg#Raleway-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Light.eot");
+  src: url("fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Raleway-Light.woff") format("woff"),
+    url("fonts/Raleway-Light.ttf") format("truetype"),
+    url("fonts/Raleway-Light.svg#Raleway-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('fonts/Raleway-Bold.eot');
-    src: url('fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Raleway-Bold.woff') format('woff'),
-        url('fonts/Raleway-Bold.ttf') format('truetype'),
-        url('fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Bold.eot");
+  src: url("fonts/Raleway-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Raleway-Bold.woff") format("woff"),
+    url("fonts/Raleway-Bold.ttf") format("truetype"),
+    url("fonts/Raleway-Bold.svg#Raleway-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('fonts/Raleway-Medium.eot');
-    src: url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Raleway-Medium.woff') format('woff'),
-        url('fonts/Raleway-Medium.ttf') format('truetype'),
-        url('fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Medium.eot");
+  src: url("fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Raleway-Medium.woff") format("woff"),
+    url("fonts/Raleway-Medium.ttf") format("truetype"),
+    url("fonts/Raleway-Medium.svg#Raleway-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('fonts/Raleway-Italic.eot');
-    src: url('fonts/Raleway-Italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Raleway-Italic.woff') format('woff'),
-        url('fonts/Raleway-Italic.ttf') format('truetype'),
-        url('fonts/Raleway-Italic.svg#Raleway-Italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Italic.eot");
+  src: url("fonts/Raleway-Italic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Raleway-Italic.woff") format("woff"),
+    url("fonts/Raleway-Italic.ttf") format("truetype"),
+    url("fonts/Raleway-Italic.svg#Raleway-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Playfair Display';
-    src: url('fonts/PlayfairDisplay-Regular.eot');
-    src: url('fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PlayfairDisplay-Regular.woff') format('woff'),
-        url('fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
-        url('fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Regular.eot");
+  src: url("fonts/PlayfairDisplay-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/PlayfairDisplay-Regular.woff") format("woff"),
+    url("fonts/PlayfairDisplay-Regular.ttf") format("truetype"),
+    url("fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Playfair Display';
-    src: url('fonts/PlayfairDisplay-Italic.eot');
-    src: url('fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PlayfairDisplay-Italic.woff') format('woff'),
-        url('fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
-        url('fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Italic.eot");
+  src: url("fonts/PlayfairDisplay-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/PlayfairDisplay-Italic.woff") format("woff"),
+    url("fonts/PlayfairDisplay-Italic.ttf") format("truetype"),
+    url("fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Playfair Display';
-    src: url('fonts/PlayfairDisplay-Bold.eot');
-    src: url('fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PlayfairDisplay-Bold.woff') format('woff'),
-        url('fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
-        url('fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Bold.eot");
+  src: url("fonts/PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/PlayfairDisplay-Bold.woff") format("woff"),
+    url("fonts/PlayfairDisplay-Bold.ttf") format("truetype"),
+    url("fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
 }
-@-ms-viewport{
-    width: device-width;
-  }
+@-ms-viewport {
+  width: device-width;
+}
 
-body { 
-    font-family: 'Raleway';
-    font-style: light;
-    color: #2d2d2d;
-    font-size: 16px;
+body {
+  font-family: "Raleway";
+  font-style: light;
+  color: #2d2d2d;
+  font-size: 16px;
 }
-h2, h3 {
-    font-family: 'Playfair Display';
+h2,
+h3 {
+  font-family: "Playfair Display";
 }
 header {
-    font-family: 'Raleway';
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
-    padding: 20px auto;
+  font-family: "Raleway";
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px auto;
 }
-.logo{
-    width: 150px;
-    height: 160px;
-    flex: 1 0 50%;
-    order:1;
+.logo img {
+  max-width: 100px;
+  height: auto;
+  flex: 1 0 50%;
+  order: 1;
+  padding: 10px 10px;
 }
-.cart {
-    margin: auto;
-    flex: 1 0 5%;
-    order:1;
-    
+.cart img {
+  max-width: 40px;
+  flex: 1 0 50%;
+  order: 1;
+  padding: 5px 5px;
 }
-
 nav {
-    flex:row wrap;
-    flex:1 0 100%;
-    order:2;
-    
+  flex: 1 0 100%;
+  order: 2;
 }
-
 .main-navigation a {
-    color: #e2574c;
-    text-decoration: none;
+  color: #e2574c;
+  text-decoration: none;
+  padding: 5px;
 }
 .main-navigation li {
-    text-transform: uppercase;
-    
-
+  text-transform: uppercase;
+  display: inline;
 }
 .banner {
-   color:white;
-    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(images/banner-girl.png)center top 50px no-repeat , url(images/flower-bkgd.jpg);
-    background-size:auto, auto 559px, auto;
-    margin:10px auto;
-    display: flex;
-    align-items: center;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(images/banner-girl.png) center top 50px no-repeat,
+    url(images/flower-bkgd.jpg);
+  background-size: auto, auto 450px, auto;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  height: 500px;
+  
 }
 .banner-text {
-    text-align: center;
-    width: 100%;
-    margin:auto;
-    padding-top: 260px;
-    padding-bottom: -195px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  min-height: 400
 }
 .banner p {
-    font-family: 'Raleway';
-    font-style: light;
-    font-size: 2rem; 
-    padding: 10px auto;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-size: 1.5rem;
 }
 .banner h2 {
-    font-family: 'Playfair Display';
-    font-size: 4rem;
-    padding: 10 auto;
+  font-family: "Playfair Display";
+  font-size: 2.5rem;
+  padding-bottom: 20px;
 }
 .hand-crafted {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding: 10px auto;
-    
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px auto;
 }
 .hand-crafted h2 {
-   font-family: 'Playfair Display';
-    font-size: 2rem;
+  font-family: "Playfair Display";
+  font-size: 2rem;
 }
 .hand-crafted p {
-    font-family: 'Raleway';
-    font-size: 1rem;
+  font-family: "Raleway";
+  font-size: 1rem;
 }
-.classification{
-    text-align: center;
-    background: url(images/mens-category.jpg) no-repeat, url(images/trends-category.jpg) no-repeat, url(images/glasses-category.jpg) no-repeat, url(images/sale-category.jpg) no-repeat, url(images/bags-category.jpg) no-repeat, url(images/womens-category.jpg) no-repeat;
-    height: 10px;
-    display: flex;
-    flex-wrap: wrap;
+.classification {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
-.classification a{
-    color: black;
-    text-decoration: none;
-    
+.mens {
+  height: 145px;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  background: url(images/mens-category.jpg) center center no-repeat;
+  background-size: cover;
+  border: 4px solid;
+  border-color: white;
+  flex: 1 0 50%;
 }
-.classification li{
-    text-transform: uppercase;
-    display: inline;
-    
+.trends {
+  height: 145px;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  background: url(images/trends-category.jpg) center center no-repeat;
+  background-size: cover;
+  border: 4px solid;
+  border-color: white;
+  flex: 1 0 25%;
+}
+.glasses {
+  height: 145px;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  background: url(images/glasses-category.jpg) center center no-repeat;
+  background-size: cover;
+  border: 4px solid;
+  border-color: white;
+  flex: 1 0 25%;
+}
+.sale {
+  height: 145px;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  background: url(images/sale-category.jpg) center center no-repeat;
+  background-size: cover;
+  border: 4px solid;
+  border-color: white;
+  flex: 1 0 25%;
+}
+.bags {
+  height: 145px;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  background: url(images/bags-category.jpg) center center no-repeat;
+  background-size: cover;
+  border: 4px solid;
+  border-color: white;
+  flex: 1 0 25%;
+}
+.womens {
+  height: 145px;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  background: url(images/womens-category.jpg) center center no-repeat;
+  background-size: cover;
+  border: 4px solid;
+  border-color: white;
+  flex: 1 0 50%;
+}
+.classification a {
+  color: black;
+  text-decoration: none;
+}
+.classification li {
+  text-transform: uppercase;
+  display: inline;
 }
 .products {
-    color: #969696;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    padding: 10px 30px 20px 10px;
-    height: 450px;
-    width: 350px;
+  color: #969696;
+  text-align: center;
+  padding: 10px 30px 20px 10px;
+  margin-bottom: 20px;
 }
-.products h2{
-    color: #2d2d2d;
-    padding: 10px 10px;
+.products h2 {
+  color: #2d2d2d;
+  padding: 10px 10px;
+  font-size: 2rem;
+
 }
 
 h3 {
-    color: #e2574c;
+  color: #e2574c;
 }
 
 .relative {
-    position:relative;
-    top: 0px;
-    left: 100px;
+  position: relative;
+  top: 0px;
+  left: 100px;
 }
 .updates {
-    min-height: 244px;
-    color: white;
-    background: url(images/wave-bkgd.jpg) no-repeat;
-    background-position: bottom;
-    margin-bottom:11px;
-    padding-top: 54px;
+  min-height: 244px;
+  color: white;
+  background: url(images/wave-bkgd.jpg) no-repeat;
+  background-position: bottom;
+  margin-bottom: 11px;
+  padding-top: 54px;
+  text-align: center;
 }
-.updates h2{
-    font-size: 35px;
-    margin-bottom: 12px
+.updates h2 {
+  font-size: 35px;
+  margin-bottom: 12px;
 }
 .updates p {
-    font-size: 16px;
-    line-height: 25px;
-    margin: 15px 0;
+  font-size: 16px;
+  line-height: 25px;
+  margin: 15px 0;
 }
-form {
-    
+.text-submit {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 15px;
+    width: 15em;
+    height: 2em;
+  }
+.email {
+
 }
-.button {
-    color: white;
-    background-color: #e2574c;
+.submit {
+  color: white;
+  background-color: #e2574c;
+  border-radius: 15px;
+  width: 
+  margin:
 
 }
 footer {
-    display: flex;
-    justify-content: space-between;
-    background: #242424;
-    text-align: center;
-    height:200px;
-    
+  display: flex;
+  justify-content: space-between;
+  background: #242424;
+  text-align: center;
+  height: 200px;
 }
 .adresse {
-    color: white;
-    font-family: 'Playfair Display';
+  color: white;
+  font-family: "Playfair Display";
+  text-align: left;
 }
-.contact-media li a{
-    color: white;
-    text-decoration: none;
-    padding: 10px 10px 10px;
-    height: 1px;
+.contact-media li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px 10px;
+  height: 1px;
 }
-.contact-media li{
-    list-style: none;
-    text-transform: uppercase;
+.contact-media li {
+  list-style: none;
+  text-transform: uppercase;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.text-submit {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 15px;
+  width: 25em;
+  height: 2em;
+}
 
 @media screen and (min-width: 600px) {
-
- 
-        
-
-
+  .logo img {
+    max-width: 150px;
+    height: auto;
+  }
 }
-}
+
 @media screen and (min-width: 480px) {
-    
-        
+  .logo img {
+    max-width: 150px;
+    height: auto;
+  }
 }
-
-

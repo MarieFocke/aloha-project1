@@ -16,24 +16,21 @@
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="flickity.min.css" media="screen" />
   </head>
 
   <body>
     <header>
       <div class="logo">
-        <img
-          src="images/aloha-logo.svg"
-          alt="Aloha Apparel Co. logo"
-          width="“150px“"
-          height="“160px“"
-        />
+        <img src="images/aloha-logo.svg" alt="Aloha Apparel Co. logo" />
       </div>
       <nav class="main-navigation">
+        <hr />
         <ul>
-          <li><a href="about">About</a></li>
-          <li><a href="products">Shop</a></li>
-          <li><a href="featured">Featured</a></li>
-          <li><a href="updates">Updates</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Shop</a></li>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#updates">Updates</a></li>
         </ul>
       </nav>
       <div class="cart">
@@ -51,70 +48,80 @@
         <h2><strong>Spring/Summer 2016</strong></h2>
       </div>
     </section>
-    <section class="hand-crafted">
+    <section class="hand-crafted" id="about">
       <h2><em>Hand Crafted</em> <strong>Styles</strong></h2>
       <p>
         Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse
         our current selection of products or sign-up for updates below.
       </p>
     </section>
-    <section class="classification">
-      <div>
+    <section class="classification" id="products">
+      <div class="mens">
         <li><a href="#">Men's</a></li>
       </div>
-      <div>
+      <div class="trends">
         <li><a href="#">Trends</a></li>
       </div>
-      <div>
+      <div class="glasses">
         <li><a href="#">Glasses</a></li>
       </div>
-      <div>
+      <div class="sale">
         <li><a href="#">Sale</a></li>
       </div>
-      <div>
+      <div class="bags">
         <li><a href="#">Bags</a></li>
       </div>
-      <div>
+      <div class="womens">
         <li><a href="#">Women's</a></li>
       </div>
     </section>
-    <section class="products">
+    <section class="products" id="featured">
       <h2><em>Most-Loved</em> <strong>Products</strong></h2>
-      <div>
-        <img
-          src="images/checked-stretch-dress.jpg"
-          alt="Aloha Apparel Co. logo"
-        />
-        <span>DRESSES</span>
-        <h3>Checked Stretch Dress</h3>
-        <pan>&#36; 129.00</pan>
-      </div>
-      <div>
-        <img
-          src="images/blue-hipster-backpack.jpg"
-          alt="Aloha Apparel Co. logo"
-        />
-        <span>BAGS</span>
-        <h3>Blue Hipster Backpack</h3>
-        <span>&#36; 69.00</span>
-      </div>
-      <div>
-        <img
-          src="images/demin-overall-shorts.jpg"
-          alt="Aloha Apparel Co. logo"
-        />
-        <span>DEMIN</span>
-        <h3>Demin Overall Shorts</h3>
-        <span>&#36; 89.00</span>
-      </div>
-      <div>
-        <img src="images/pink-dotted-dress.jpg" alt="Aloha Apparel Co. logo" />
-        <span>DRESSES</span>
-        <h3>Pink Dotted Dress</h3>
-        <span>&#36; 99.00</span>
+      <div class="products-carousel">
+        <div class="unique-products">
+          <img src="images/stretch-knit-dress.jpg" /> <span>DRESSES</span>
+          <h3>Stretch Knit Dress</h3>
+          <span>&#36; 169.00</span>
+        </div>
+        <div class="unique-products">
+          <img src="images/cotton-blue-shirt.jpg" /> <span>SHIRTS</span>
+          <h3>Cotton Blue Shirt</h3>
+          <span>&#36; 89.00</span>
+        </div>
+        <div class="unique-products">
+          <img src="images/checked-stretch-dress.jpg" /> <span>DRESSES</span>
+          <h3>Checked Stretch Dress</h3>
+          <span>&#36; 129.00</span>
+        </div>
+        <div class="unique-products">
+          <img src="images/blue-hipster-backpack.jpg" /> <span>BAGS</span>
+          <h3>Blue Hipster Backpack</h3>
+          <span>&#36; 69.00</span>
+        </div>
+        <div class="unique-products">
+          <img src="images/demin-overall-shorts.jpg" /> <span>DEMIN</span>
+          <h3>Demin Overall Shorts</h3>
+          <span>&#36; 89.00</span>
+        </div>
+        <div class="unique-products">
+          <img src="images/pink-dotted-dress.jpg" /> <span>DRESSES</span>
+          <h3>Pink Dotted Dress</h3>
+          <span>&#36; 99.00</span>
+        </div>
+        <div class="unique-products">
+          <img src="images/blue-silk-dress.jpg" /> <span>DRESSES</span>
+          <h3>Blue Silk Dress</h3>
+          <span>&#36; 199.00</span>
+        </div>
+        <div class="unique-products">
+          <img src="images/cotton-yellow-tshirt.jpg" />
+          <span>TSHIRT</span>
+          <h3>Cotton Yellow T-shirt</h3>
+          <span>&#36; 99.00</span>
+        </div>
       </div>
     </section>
-    <section class="updates">
+    <section class="updates" id="updates">
       <div>
         <h2><em>Sign-up for</em> <strong>Updates</strong></h2>
         <p>
@@ -124,7 +131,7 @@
           any time.
         </p>
       </div>
-      <form action="subscibe" method="post" width="100px" height="100px">
+      <form class="text-submit" width="100px" height="200px">
         <input
           type="text"
           placeholder="Your email"
@@ -170,6 +177,8 @@
         </ul>
       </div>
     </footer>
-    <script src="index.js"></script>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="./flickity.pkgd.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
