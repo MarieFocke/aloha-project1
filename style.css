@@ -133,7 +133,7 @@ table {
 /*Font Faces*/
 
 @font-face {
-  font-family: "Raleway";
+  font-family: "Raleway-light";
   src: url("fonts/Raleway-Light.eot");
   src: url("fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"),
     url("fonts/Raleway-Light.woff") format("woff"),
@@ -144,7 +144,7 @@ table {
 }
 
 @font-face {
-  font-family: "Raleway";
+  font-family: "Raleway-bold";
   src: url("fonts/Raleway-Bold.eot");
   src: url("fonts/Raleway-Bold.eot?#iefix") format("embedded-opentype"),
     url("fonts/Raleway-Bold.woff") format("woff"),
@@ -155,7 +155,7 @@ table {
 }
 
 @font-face {
-  font-family: "Raleway";
+  font-family: "Raleway-medium";
   src: url("fonts/Raleway-Medium.eot");
   src: url("fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"),
     url("fonts/Raleway-Medium.woff") format("woff"),
@@ -166,7 +166,7 @@ table {
 }
 
 @font-face {
-  font-family: "Raleway";
+  font-family: "Raleway-italic";
   src: url("fonts/Raleway-Italic.eot");
   src: url("fonts/Raleway-Italic.eot?#iefix") format("embedded-opentype"),
     url("fonts/Raleway-Italic.woff") format("woff"),
@@ -177,7 +177,7 @@ table {
 }
 
 @font-face {
-  font-family: "Playfair Display";
+  font-family: "Playfair Display-regular";
   src: url("fonts/PlayfairDisplay-Regular.eot");
   src: url("fonts/PlayfairDisplay-Regular.eot?#iefix")
       format("embedded-opentype"),
@@ -190,7 +190,7 @@ table {
 }
 
 @font-face {
-  font-family: "Playfair Display";
+  font-family: "Playfair Display-italic";
   src: url("fonts/PlayfairDisplay-Italic.eot");
   src: url("fonts/PlayfairDisplay-Italic.eot?#iefix")
       format("embedded-opentype"),
@@ -202,7 +202,7 @@ table {
 }
 
 @font-face {
-  font-family: "Playfair Display";
+  font-family: "Playfair Display-bold";
   src: url("fonts/PlayfairDisplay-Bold.eot");
   src: url("fonts/PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"),
     url("fonts/PlayfairDisplay-Bold.woff") format("woff"),
@@ -215,24 +215,29 @@ table {
   width: device-width;
 }
 
+em {
+  font-style: italic;
+}
+
+strong{
+  font-weight: bold;
+}
+
 body {
   font-family: "Raleway";
   font-style: light;
   color: #2d2d2d;
   font-size: 16px;
 }
-h2,
-h3 {
-  font-family: "Playfair Display";
-}
 header {
-  font-family: "Raleway";
+  font-family: "Raleway-medium";
   display: flex;
   text-align: center;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px auto;
 }
+
 .logo img {
   max-width: 150px;
   height: auto;
@@ -270,13 +275,13 @@ nav {
   margin: 10px auto;
   display: flex;
   align-items: center;
-  height: 400px;
+  height: 450px;
 }
 .banner-text {
   text-align: center;
   width: 100%;
   margin: auto;
-  min-height: 200px;
+  min-height: 150px;
 }
 .banner p {
   font-family: "Raleway";
@@ -293,15 +298,16 @@ nav {
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding: 10px auto;
+  padding: 100px auto;
 }
-.hand-crafted h2 {
-  font-family: "Playfair Display";
+.hand-crafted span {
   font-size: 2rem;
+  padding:10px 10px;
 }
 .hand-crafted p {
   font-family: "Raleway";
   font-size: 1rem;
+  padding: 10px 10px;
 }
 .classification {
   text-align: center;
@@ -395,15 +401,16 @@ nav {
 .products {
   color: #969696;
   text-align: center;
-  padding: 10px 30px 20px 10px;
-  margin-bottom: 20px;
+  padding: 10px 30px 20px 30px;
+  margin-bottom: 30px;
 }
 .products h2 {
   color: #2d2d2d;
   padding: 10px 10px;
   font-size: 2rem;
 }
-.unique-products span h3 {
+.unique-products span,
+.unique-products h3 {
   text-align: center;
 }
 
@@ -471,18 +478,16 @@ h3 {
   line-height: 20px;
   font-family: "Playfair Display";
 }
-.done-by
-.adresse {
+.done-by .adresse {
   color: white;
   font-family: "Playfair Display";
   text-align: left;
 }
-.contact-media{
+.contact-media {
   display: flex;
   justify-content: center;
   flex-flow: wrap;
   flex: 0 0 30%;
-
 }
 .contact-media li a {
   color: white;
@@ -523,16 +528,15 @@ h3 {
   .bags {
     flex: 1 0 25%;
   }
-  .classification div{
+  .classification div {
     background-size: cover, contain;
   }
   .contact-media {
     text-align: justify;
   }
-  .contact-media a i{
+  .contact-media a i {
     width: 30px;
   }
-
 }
 
 @media screen and (min-width: 600px) {
@@ -568,7 +572,7 @@ h3 {
   .contact-media {
     text-align: justify;
   }
-  .contact-media a i{
+  .contact-media a i {
     width: 30px;
   }
 }
