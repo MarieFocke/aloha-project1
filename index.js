@@ -1,30 +1,31 @@
-jQuery("nav.main-navigation li").css("color", "grey");
 
-$("form").on("click", "button", function() {
-  alert("Thanks for subscribing!");
-  $(".email").val("");
-});
 
-$('.products-carousel').flickity({
+$(".products-carousel").flickity({
   contain: true,
   percentPosition: false,
   imagesLoaded: true,
-  cellAlign: 'left',
+  cellAlign: "left",
   autoplay: true,
   contain: true,
 });
 
-$(function() {
-  $('.main-navigation a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
+$(".submit").on("click", function() {
+  //http://www.jquerybyexample.net/2011/04/validate-email-address-using-jquery.html
+
+  function validateEmail(sEmail) {
+    var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+    console.log(filter.test(sEmail));
+    if (filter.test(sEmail)) {
+      return true;
+    } else {
+      return false;
     }
-  });
+  }
+  const sEmail = $(".email").val();
+
+  if (validateEmail(sEmail)) {
+    alert("Thanks for Subscribing!");
+  } else {
+    alert("Invalid Email");
+  }
 });
