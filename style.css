@@ -417,7 +417,7 @@ h3 {
   left: 100px;
 }
 .updates {
-  min-height: 244px;
+  min-height: 350px;
   color: white;
   background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
     url(images/wave-bkgd.jpg) no-repeat;
@@ -465,15 +465,24 @@ h3 {
   background: #242424;
   text-align: center;
   height: 200px;
+  flex-direction: column;
 }
 .contact {
   line-height: 20px;
   font-family: "Playfair Display";
 }
+.done-by
 .adresse {
   color: white;
   font-family: "Playfair Display";
   text-align: left;
+}
+.contact-media{
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  flex: 0 0 30%;
+
 }
 .contact-media li a {
   color: white;
@@ -484,6 +493,9 @@ h3 {
 .contact-media li {
   list-style: none;
   text-transform: uppercase;
+}
+.only-logo {
+  display: none;
 }
 
 .text-submit {
@@ -511,6 +523,16 @@ h3 {
   .bags {
     flex: 1 0 25%;
   }
+  .classification div{
+    background-size: cover, contain;
+  }
+  .contact-media {
+    text-align: justify;
+  }
+  .contact-media a i{
+    width: 30px;
+  }
+
 }
 
 @media screen and (min-width: 600px) {
@@ -539,5 +561,14 @@ h3 {
   .sale,
   .bags {
     flex: 1 0 25%;
+  }
+  .classification div {
+    background-size: cover, contain;
+  }
+  .contact-media {
+    text-align: justify;
+  }
+  .contact-media a i{
+    width: 30px;
   }
 }
