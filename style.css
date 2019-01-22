@@ -219,13 +219,15 @@ em {
   font-style: italic;
 }
 
-strong{
+strong {
   font-weight: bold;
+}
+h3 {
+  color: #e2574c;
 }
 
 body {
-  font-family: "Raleway";
-  font-style: light;
+  font-family: "Raleway-regular";
   color: #2d2d2d;
   font-size: 16px;
 }
@@ -299,15 +301,13 @@ nav {
   display: flex;
   flex-direction: column;
   padding: 100px auto;
-}
-.hand-crafted span {
   font-size: 2rem;
-  padding:10px 10px;
+  font-family: "Playfair Display-regular";
 }
 .hand-crafted p {
-  font-family: "Raleway";
+  font-family: "Raleway-regular";
   font-size: 1rem;
-  padding: 10px 10px;
+  padding: 50px auto;
 }
 .classification {
   text-align: center;
@@ -319,77 +319,85 @@ nav {
   color: white;
 }
 .mens {
-  height: 200px;
-  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(images/mens-category.jpg) center center no-repeat;
-  background-size: cover, contain;
+  background: url(images/mens-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
   border: 4px solid;
   border-color: white;
   flex: 1 0 100%;
-  line-height: 200px;
 }
 .trends {
-  height: 200px;
-  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(images/trends-category.jpg) center center no-repeat;
-  background-size: cover, contain;
+  background: url(images/trends-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
   border: 4px solid;
   border-color: white;
   flex: 1 0 50%;
-  line-height: 200px;
 }
 .glasses {
-  height: 200px;
-  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(images/glasses-category.jpg) center center no-repeat;
-  background-size: cover, contain;
+  background: url(images/glasses-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
   border: 4px solid;
   border-color: white;
   flex: 1 0 50%;
-  line-height: 200px;
 }
 .sale {
-  height: 200px;
-  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(images/sale-category.jpg) center center no-repeat;
-  background-size: cover, contain;
+  background: url(images/sale-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
   border: 4px solid;
   border-color: white;
   flex: 1 0 50%;
-  line-height: 200px;
 }
 .bags {
-  height: 200px;
-  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(images/bags-category.jpg) center center no-repeat;
-  background-size: cover, contain;
+  background: url(images/bags-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
   border: 4px solid;
   border-color: white;
   flex: 1 0 50%;
-  line-height: 200px;
 }
 .womens {
-  height: 200px;
-  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(images/womens-category.jpg) center center no-repeat;
-  background-size: cover, contain;
+  background: url(images/womens-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
   border: 4px solid;
   border-color: white;
   flex: 1 0 100%;
-  line-height: 200px;
 }
+
+.box:before {
+  content: "";
+  display: block;
+  padding-top: 25%;
+}
+
+.box-text {
+  position: relative;
+  text-align: center;
+  top: 40px;
+  font-size: 30px;
+}
+
 .classification a {
   color: black;
   text-decoration: none;
@@ -409,15 +417,9 @@ nav {
   padding: 10px 10px;
   font-size: 2rem;
 }
-.unique-products span,
-.unique-products h3 {
-  text-align: center;
+.unique-products {
+  width: 100%;
 }
-
-h3 {
-  color: #e2574c;
-}
-
 .relative {
   position: relative;
   top: 0px;
@@ -445,98 +447,72 @@ h3 {
 .text-submit {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   background-color: white;
   border-radius: 15px;
-  height: 30px;
-  justify-content: space-between;
-  align-content: center;
   margin: 10px auto;
-  width: 250px;
-  height: 5px;
+  width: 20rem;
+  height: 2rem;
+}
+.submit {
+  color: white;
+  background-color: #e2574c;
+  font-family: "Raleway-bold";
+  font-size: 0.75rem;
+  border-radius: 15px;
+  width: 80px;
+  height: 32px;
 }
 .email {
   width: 200px;
   border-color: transparent;
   margin-left: 20px;
-}
-.submit {
-  color: white;
-  background-color: #e2574c;
-  border-radius: 15px;
-  width: 80px;
-  height: 30px;
+  color: #969696;
+  font-family: "Raleway-light";
+  font-size: 0.75rem;
 }
 .contact-us {
   display: flex;
-  justify-content: space-between;
   background: #242424;
+  color: white;
   text-align: center;
   height: 200px;
   flex-direction: column;
+  padding: 40px auto;
 }
-.contact {
+.contact,
+.contact-media {
+  margin: 10px auto;
   line-height: 20px;
-  font-family: "Playfair Display";
 }
-.done-by .adresse {
+.phone-mail a {
   color: white;
-  font-family: "Playfair Display";
-  text-align: left;
+}
+.done-by,
+.phone-mail,
+.adresse {
+  padding: 5px;
+}
+.adresse {
+  color: #969696;
 }
 .contact-media {
   display: flex;
   justify-content: center;
-  flex-flow: wrap;
   flex: 0 0 30%;
 }
 .contact-media li a {
   color: white;
-  text-decoration: none;
-  padding: 10px 10px 10px;
+  padding: 10px 10px;
   height: 1px;
 }
 .contact-media li {
   list-style: none;
   text-transform: uppercase;
+  display: inline-block;
 }
 .only-logo {
   display: none;
-}
-
-.text-submit {
-  display: flex;
-  flex-direction: row;
-  background-color: white;
-  border-radius: 15px;
-  width: 25em;
-  height: 2em;
-}
-
-@media screen and (min-width: 1240px) {
-  .logo img {
-    max-width: 150px;
-    height: auto;
-  }
-  .mens,
-  .womens {
-    flex: 1 0 50%;
-  }
-
-  .trends,
-  .glasses,
-  .sale,
-  .bags {
-    flex: 1 0 25%;
-  }
-  .classification div {
-    background-size: cover, contain;
-  }
-  .contact-media {
-    text-align: justify;
-  }
-  .contact-media a i {
-    width: 30px;
-  }
 }
 
 @media screen and (min-width: 600px) {
@@ -558,6 +534,7 @@ h3 {
   .mens,
   .womens {
     flex: 1 0 50%;
+    padding-bottom: 10%;
   }
 
   .trends,
@@ -565,11 +542,43 @@ h3 {
   .sale,
   .bags {
     flex: 1 0 25%;
+    padding-bottom: 15%;
   }
-  .classification div {
-    background-size: cover, contain;
+  .unique-products {
+    width: 50%;
   }
   .contact-media {
+    display: inline-block;
+    text-align: justify;
+  }
+  .contact-media a i {
+    width: 30px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .logo img {
+    max-width: 150px;
+    height: auto;
+  }
+  .mens,
+  .womens {
+    flex: 1 0 50%;
+    padding-bottom: 10%;
+  }
+
+  .trends,
+  .glasses,
+  .sale,
+  .bags {
+    flex: 1 0 25%;
+    padding-bottom: 10%;
+  }
+  .unique-products {
+    width: 25%;
+  }
+  .contact-media {
+    display: inline-block;
     text-align: justify;
   }
   .contact-media a i {
