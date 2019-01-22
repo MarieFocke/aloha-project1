@@ -1,12 +1,13 @@
+
 //flickity carousel
-//
 $(".products-carousel").flickity({
   contain: true,
   percentPosition: false,
   imagesLoaded: true,
   cellAlign: "left",
   autoplay: true,
-  contain: true
+  contain: true,
+
 });
 //email validation
 //http://www.jquerybyexample.net/2011/04/validate-email-address-using-jquery.html
@@ -28,26 +29,20 @@ $(".submit").on("click", function() {
     alert("Invalid Email");
   }
 });
-// slow scrolling
+// slow scrolling 
 // @https://css-tricks.com/smooth-scrolling-accessibility/?fbclid=IwAR22bfph2OHFy1gNFR-YpFwYLfnDyUht_8O0oLbcM6dtfrdQWgyPpSaoS1I
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
-    if (
-      location.pathname.replace(/^\//, "") ==
-        this.pathname.replace(/^\//, "") &&
-      location.hostname == this.hostname
-    ) {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
-      target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        $("html, body").animate(
-          {
-            scrollTop: target.offset().top
-          },
-          1600
-        );
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
         return false;
       }
     }
   });
 });
+

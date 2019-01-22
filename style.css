@@ -286,28 +286,33 @@ nav {
   min-height: 150px;
 }
 .banner p {
-  font-family: "Raleway";
+  font-family: "Raleway-light";
   font-style: normal;
   font-size: 1.5rem;
   margin: 20px;
 }
 .banner h2 {
-  font-family: "Playfair Display";
-  font-size: 2.5rem;
+  font-family: "Playfair Display-light";
+  font-size: 3rem;
   padding-bottom: 20px;
 }
 .hand-crafted {
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding: 100px auto;
   font-size: 2rem;
   font-family: "Playfair Display-regular";
 }
+.hand-crafted h2{
+  font-family: "Playfair Display-regular";
+  font-size: 2rem;
+  margin: 70px 30px 10px 30px;
+} 
 .hand-crafted p {
-  font-family: "Raleway-regular";
+  font-family: "Raleway-light";
   font-size: 1rem;
-  padding: 50px auto;
+  margin: 10px 20px 70px 20px;
+  line-height: 30px;
 }
 .classification {
   text-align: center;
@@ -323,7 +328,8 @@ nav {
   padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(images/mens-category.jpg) no-repeat 50%;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+  url(images/mens-category.jpg) no-repeat 50%;
   background-size: cover, cover;
   border: 4px solid;
   border-color: white;
@@ -334,7 +340,8 @@ nav {
   padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(images/trends-category.jpg) no-repeat 50%;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+  url(images/trends-category.jpg) no-repeat 50%;
   background-size: cover, cover;
   border: 4px solid;
   border-color: white;
@@ -345,7 +352,8 @@ nav {
   padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(images/glasses-category.jpg) no-repeat 50%;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+  url(images/glasses-category.jpg) no-repeat 50%;
   background-size: cover, cover;
   border: 4px solid;
   border-color: white;
@@ -356,7 +364,8 @@ nav {
   padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(images/sale-category.jpg) no-repeat 50%;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+  url(images/sale-category.jpg) no-repeat 50%;
   background-size: cover, cover;
   border: 4px solid;
   border-color: white;
@@ -367,7 +376,8 @@ nav {
   padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(images/bags-category.jpg) no-repeat 50%;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+  url(images/bags-category.jpg) no-repeat 50%;
   background-size: cover, cover;
   border: 4px solid;
   border-color: white;
@@ -378,7 +388,8 @@ nav {
   padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(images/womens-category.jpg) no-repeat 50%;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+  url(images/womens-category.jpg) no-repeat 50%;
   background-size: cover, cover;
   border: 4px solid;
   border-color: white;
@@ -394,13 +405,14 @@ nav {
 .box-text {
   position: relative;
   text-align: center;
-  top: 40px;
-  font-size: 30px;
+  font-family: "Raleway-bold";
+  font-size: 1.5rem;
 }
 
 .classification a {
   color: black;
   text-decoration: none;
+  font-family: "Raleway-light";
 }
 .classification li {
   text-transform: uppercase;
@@ -409,16 +421,18 @@ nav {
 .products {
   color: #969696;
   text-align: center;
-  padding: 10px 30px 20px 30px;
+  padding: 10px 5px 20px 5px;
   margin-bottom: 30px;
 }
 .products h2 {
   color: #2d2d2d;
-  padding: 10px 10px;
+  padding: 30px 30px;
+  font-family: "Playfair Display-regular";
   font-size: 2rem;
 }
 .unique-products {
   width: 100%;
+  padding: 0px 0px 20px 0px;
 }
 .relative {
   position: relative;
@@ -436,13 +450,15 @@ nav {
   text-align: center;
 }
 .updates h2 {
-  font-size: 35px;
-  margin-bottom: 12px;
+  font-size: 2rem;
+  font-family: "Playfair Display-regular";
+  margin-bottom: 15px;
 }
 .updates p {
+  font-family: "Raleway-light";
   font-size: 16px;
-  line-height: 25px;
-  margin: 15px 0;
+  line-height: 20px;
+  margin: 30px 30px;
 }
 .text-submit {
   display: flex;
@@ -472,17 +488,16 @@ nav {
   font-size: 0.75rem;
 }
 .contact-us {
-  display: flex;
   background: #242424;
   color: white;
   text-align: center;
   height: 200px;
   flex-direction: column;
-  padding: 40px auto;
+  padding-top: 30px;
 }
 .contact,
 .contact-media {
-  margin: 10px auto;
+  margin: 5px auto;
   line-height: 20px;
 }
 .phone-mail a {
@@ -492,6 +507,7 @@ nav {
 .phone-mail,
 .adresse {
   padding: 5px;
+  font-family: "Playfair Display-regular";
 }
 .adresse {
   color: #969696;
@@ -499,7 +515,7 @@ nav {
 .contact-media {
   display: flex;
   justify-content: center;
-  flex: 0 0 30%;
+  font-family: "Raleway-light"
 }
 .contact-media li a {
   color: white;
@@ -516,17 +532,36 @@ nav {
 }
 
 @media screen and (min-width: 600px) {
-  .logo img {
-    max-width: 250px;
-    height: auto;
-    flex: 1 0 33.33%;
+  header {
+    font-family: "Raleway-medium";
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+  header :nth-child(1) {
     order: 1;
   }
+  header :nth-child(2) {
+    order: 2;
+  }
+  header :nth-child(3) {
+    order: 3;
+  }
+  .logo img {
+    max-width: 150px;
+    height: auto;
+    flex: 1 0 30%;
+  }
+  .main-navigation {
+    flex: 1 0 30%;
+    padding-top: 30px;
+  }
   .cart img {
-    max-width: 40px;
-    flex: 1 0 50%;
-    order: 1;
-    padding: 5px 5px;
+    max-width: 100px;
+    flex: 1 0 30%;
+    padding: 5px 30px;
   }
   hr {
     display: none;
@@ -534,7 +569,7 @@ nav {
   .mens,
   .womens {
     flex: 1 0 50%;
-    padding-bottom: 10%;
+    padding-bottom: 9%;
   }
 
   .trends,
@@ -544,27 +579,75 @@ nav {
     flex: 1 0 25%;
     padding-bottom: 15%;
   }
+  .box-text {
+    position: relative;
+    text-align: center;
+    
+    font-family: "Raleway-bold";
+    font-size: 1.5rem;
+  }
+  .hand-crafted h2 {
+    margin: 50px 50px 10px 50px;
+  }
+  .hand-crafted p{
+    margin: 10px 50px 50px 50px;
+  }
   .unique-products {
     width: 50%;
   }
-  .contact-media {
-    display: inline-block;
+  .updates p {
+    margin: 30px 70px;
+    line-height: 30px;
+    margin: 20px 60px 30px 60px;
+  }
+  .contact-us {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .contact-media li  {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-media li a {
+    text-decoration: none;
     text-align: justify;
   }
-  .contact-media a i {
-    width: 30px;
+  .only-logo {
+    display: flex;
   }
-}
 
 @media screen and (min-width: 1240px) {
+
+  header :nth-child(1) {
+    order: 1;
+  }
+  header :nth-child(2) {
+    order: 2;
+  }
+  header :nth-child(3) {
+    order: 3;
+  }
   .logo img {
-    max-width: 150px;
+    max-width: 200px;
     height: auto;
+    flex: 1 0 30%;
+    padding: 10px 10px 0px 10px;
+  }
+  .main-navigation {
+    flex: 1 0 30%;
+    padding-top: 30px;
+  }
+  .cart img {
+    max-width: 150px;
+    flex: 1 0 30%;
+    padding: 5px 40px;
   }
   .mens,
   .womens {
     flex: 1 0 50%;
-    padding-bottom: 10%;
+    padding-bottom: 9%;
   }
 
   .trends,
@@ -572,10 +655,17 @@ nav {
   .sale,
   .bags {
     flex: 1 0 25%;
-    padding-bottom: 10%;
+    padding-bottom: 15%;
+  }
+  
+  .hand-crafted p{
+    margin: 10px 350px 40px 350px;
   }
   .unique-products {
     width: 25%;
+  }
+  .updates p {
+    margin: 10px 300px 20px 300px;
   }
   .contact-media {
     display: inline-block;
